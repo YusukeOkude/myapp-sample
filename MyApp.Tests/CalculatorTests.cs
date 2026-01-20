@@ -21,4 +21,11 @@ public class CalculatorTests
         var calc = new Calculator();
         Assert.Equal(1, calc.Subtract(3, 2));
     }
+
+    [Fact]
+    public void Multiply_ReturnsCorrectProduct()
+    {
+        var calc = new Calculator();
+        Assert.Equal(6, calc.Multiply(2, 3));
+    }
 }
